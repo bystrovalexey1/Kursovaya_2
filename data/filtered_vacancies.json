@@ -1,0 +1,56 @@
+[
+    {
+        "name": "Python Developer",
+        "url": "<https://hh.ru/vacancy/123456>",
+        "salary": {
+            "from": 100000,
+            "to": 130000
+        },
+        "snippet": "Требования: опыт работы от 3 лет..."
+    },
+    {
+        "name": "Разработчик",
+        "url": "https://api.hh.ru/vacancies/112696337?host=hh.ru",
+        "salary": {
+            "from": 95000,
+            "to": 122000
+        },
+        "snippet": "Умение программировать на C#. Знание реляционных баз данных (SQL). Знание <highlighttext>Python</highlighttext> приветствуется."
+    },
+    {
+        "name": "Программист-разработчик",
+        "url": "https://api.hh.ru/vacancies/117369866?host=hh.ru",
+        "salary": {
+            "from": 100000,
+            "to": 120000
+        },
+        "snippet": "...с системами контроля версий (git). Опыт разработки на одноплатных компьютерах. Опыт использования фреймворка Qt. Опыт разработки под Linux. Знание <highlighttext>Python</highlighttext>."
+    },
+    {
+        "name": "Frontend-разработчик Junior/Middle (Удаленно)",
+        "url": "https://api.hh.ru/vacancies/116357873?host=hh.ru",
+        "salary": {
+            "from": 80000,
+            "to": 120000
+        },
+        "snippet": "Базовые знания JavaScript и React. Pixel-perfect и адаптивная верстка. Умение работать в команде. Желание учиться и расти вместе с..."
+    },
+    {
+        "name": "Python-разработчик",
+        "url": "https://api.hh.ru/vacancies/116455408?host=hh.ru",
+        "salary": {
+            "from": 80000,
+            "to": 105000
+        },
+        "snippet": "От 1 года коммерческой разработки. Умение структурно мыслить, а также разбивать проект на подзадачи. Опыт с другими языками программирования, например..."
+    },
+    {
+        "name": "Разработчик next.js",
+        "url": "https://api.hh.ru/vacancies/117005516?host=hh.ru",
+        "salary": {
+            "from": 80000,
+            "to": 100000
+        },
+        "snippet": "Знание Next.js и TypeScript. Уверенное владение JS (ES5, ES6). Опыт работы с git. Знание и опыт CSS3..."
+    }
+]
