@@ -1,7 +1,3 @@
-from src.json_saver import JSONSaver
-from src.vacancy import Vacancy
-
-
 def filter_vacancies(vacancies_list: list, filter_words: list):
     """Функция фильтрует вакансии по ключевым словам"""
     filtered_vacancies = []
@@ -53,15 +49,13 @@ def get_vacancies_by_salary(filtered_vacancies, salary_range):
             continue
 
     return sorted(
-        filtered_salary_vacancies,
-        key=lambda x: x["salary"].get("to", 0),
-        reverse=True
+        filtered_salary_vacancies, key=lambda x: x["salary"].get("to", 0), reverse=True
     )
 
 
 def get_top_vacancies(filtered_vacancies, top_n):
     """Функция вывода топ вакансий по выбору пользователя"""
-    filtered_vacancies = filtered_vacancies[0: top_n]
+    filtered_vacancies = filtered_vacancies[0:top_n]
     return filtered_vacancies
 
 

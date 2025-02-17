@@ -1,5 +1,6 @@
 class Vacancy:
     """Класс создания вакансии с параметрами"""
+
     __list_vacancies: list = []
     __slots__ = ("__name", "__url", "__snippet", "__salary")
 
@@ -8,8 +9,7 @@ class Vacancy:
         name: str = "Не указан",
         url: str = "Не указан",
         salary: str | None | dict = None,
-        snippet: str = "Не указан"
-
+        snippet: str = "Не указан",
     ):
         """Конструктор инициализации объекта класса Vacancy (вакансия работника)"""
         self.__name = name
@@ -21,7 +21,7 @@ class Vacancy:
             "name": self.__name,
             "url": self.__url,
             "salary": self.__salary,
-            "snippet": self.__snippet
+            "snippet": self.__snippet,
         }
         self.__list_vacancies.append(dict_vacancy)
 
@@ -40,8 +40,8 @@ class Vacancy:
                 return {"from": 0, "to": 0}
         elif isinstance(salary, dict):
             # Убеждаемся, что ключи 'from' и 'to' присутствуют
-            from_salary = salary.get('from', 0)
-            to_salary = salary.get('to', 0)
+            from_salary = salary.get("from", 0)
+            to_salary = salary.get("to", 0)
             return {"from": from_salary, "to": to_salary}
         else:
             # Если тип данных неожиданный, возвращаем значения по умолчанию
@@ -78,7 +78,10 @@ class Vacancy:
     def filtered_salary(cls, from_salary: int = 0, to_salary: int = float("inf")):
         """Метод фильтрации вакансий по зарплате (от и до вилка)"""
         for vacancies in cls.__list_vacancies:
-            if vacancies["salary"].get("from", 0) >= from_salary and vacancies["salary"]["to"] <= to_salary:
+            if (
+                vacancies["salary"].get("from", 0) >= from_salary
+                and vacancies["salary"]["to"] <= to_salary
+            ):
                 print(vacancies)
 
     @classmethod
